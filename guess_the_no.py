@@ -14,8 +14,8 @@ print ("GUESS A NUMBER")
 guess = int (input())
 d="yes"
 while (d=="yes"or d== "y"):
-     if (c==1):
-        while(a<20):
+    if (c==1):
+        for a in range(0,20):
             if(sys_no == guess):
                 print("YOUR GUESS IS CORRECT")
             elif(sys_no < guess):
@@ -23,27 +23,24 @@ while (d=="yes"or d== "y"):
             else:
                 print("YOUR GUESS IS HIGHER THAN THE REAL NO"
         
-            a= a+1
-    elif (c==2):
-        while (a<10) :
+            
+    if (c==1):
+        for a in range(0,10):
             if(sys_no == guess):
                 print("YOUR GUESS IS CORRECT")
             elif(sys_no < guess):
                 print("YOUR GUESS IS LOWER THAN THE REAL NO")
             else:
                 print("YOUR GUESS IS HIGHER THAN THE REAL NO")
-			a=a+1
             
-    elif (c==3):
-        while(a<6) :
+    if (c==3):
+        for a in range(0,6):
              if(sys_no == guess):
                 print("YOUR GUESS IS CORRECT")
              elif(sys_no < guess):
                  print("YOUR GUESS IS LOWER THAN THE REAL NO")
              else:
                  print("YOUR GUESS IS HIGHER THAN THE REAL NO")
-
-            a=a+1
 
     else:
         print("wrong choice")
