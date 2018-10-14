@@ -24,7 +24,7 @@ while (d=="yes"or d== "y"):
                 print("YOUR GUESS IS HIGHER THAN THE REAL NO"
         
             
-    if (c==1):
+    if (c==2):
         for a in range(0,10):
             if(sys_no == guess):
                 print("YOUR GUESS IS CORRECT")
