@@ -10,37 +10,50 @@ print ("select the game difficulty")
 print("enter 1) BEGINER \n 2) MEDIUM \n 3)ADVANCED")
 print ("NUMBER OF CHANCES\n  BEGINER : 20 \n MEDIUM : 10 \n ADVANCED : 6")
 c = int(input())  
-print ("GUESS A NUMBER")
-guess = int (input())
+
 d="yes"
 while (d=="yes"or d== "y"):
     if (c==1):
         for a in range(0,20):
+            print ("GUESS A NUMBER")
+            guess = int (input())
             if(sys_no == guess):
                 print("YOUR GUESS IS CORRECT")
+                break
             elif(sys_no < guess):
-                print("YOUR GUESS IS LOWER THAN THE REAL NO")
-            else:
-                print("YOUR GUESS IS HIGHER THAN THE REAL NO"
-        
-            
-    if (c==2):
-        for a in range(0,10):
-            if(sys_no == guess):
-                print("YOUR GUESS IS CORRECT")
-            elif(sys_no < guess):
-                print("YOUR GUESS IS LOWER THAN THE REAL NO")
-            else:
                 print("YOUR GUESS IS HIGHER THAN THE REAL NO")
+                continue
+            else:
+                print("YOUR GUESS IS LOWER THAN THE REAL NO")
+                continue        
+            
+    if c==2 :
+        for a in range(0,10):
+            print ("GUESS A NUMBER")
+            guess = int (input())
+            if(sys_no == guess):
+                print("YOUR GUESS IS CORRECT")
+                break
+            elif(sys_no < guess):
+                print("YOUR GUESS IS HIGHER THAN THE REAL NO")
+                continue
+            else:
+                print("YOUR GUESS IS LOWER THAN THE REAL NO")
+                continue
             
     if (c==3):
         for a in range(0,6):
-             if(sys_no == guess):
+            print ("GUESS A NUMBER")
+            guess = int (input())
+            if(sys_no == guess):
                 print("YOUR GUESS IS CORRECT")
-             elif(sys_no < guess):
-                 print("YOUR GUESS IS LOWER THAN THE REAL NO")
-             else:
+                break
+            elif(sys_no < guess):
                  print("YOUR GUESS IS HIGHER THAN THE REAL NO")
+                 continue
+            else:
+                 print("YOUR GUESS IS LOWER THAN THE REAL NO")
+                 continue
 
     else:
         print("wrong choice")
