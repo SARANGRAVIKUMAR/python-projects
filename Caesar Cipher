@@ -1,0 +1,11 @@
+import string
+a = input("enter the message") //enter the msg u  want to decode
+b = int(input("entert the shift value")) //enter the shift key 
+s=""
+for i in range (len(a)):
+	 c =  ord(a[i])+b // converting a string to ascii value and decoding it w.r.t the shift
+	 s=s+(chr(c))  
+print (s)
+
+
+
